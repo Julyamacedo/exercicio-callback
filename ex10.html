@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão com Callback</title>
+</head>
+<body>
+    <h1>Exercício 10</h1>
+
+    <p id="mensagem">Clique no botão para confirmar.</p>
+
+    <button id="confirmar">Confirmar</button>
+
+    <script>
+        function confirmarAcao() {
+            document.getElementById("mensagem").textContent =
+                "Ação confirmada!";
+        }
+
+        document.getElementById("confirmar").addEventListener(
+            "click",
+            confirmarAcao
+        );
+    </script>
+</body>
+</html>
